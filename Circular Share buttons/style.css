@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0983a5 0%, #005bea 100%);
+}
+.menu{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.menu li{
+    list-style: none;
+    position: absolute;
+    left: 0;
+    transform-origin: 100px;
+    transition: all 0.5s;
+    transition-delay: calc(0.1s*var(--i));
+    font-size: 20px;
+    transform: rotate(0deg) translateX(80px);
+    -webkit-transform: rotate(0deg) translateX(80px);
+    -moz-transform: rotate(0deg) translateX(80px);
+    -ms-transform: rotate(0deg) translateX(80px);
+    -o-transform: rotate(0deg) translateX(80px);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.menu.active li{
+    transform: rotate(calc(360deg/6*var(--i)));
+   
+}
+.toggle{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    cursor: pointer;
+    z-index: 10000;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.menu li a{
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transform: rotate(calc(360deg/-6*var(--i)));
+    text-decoration: none;
+    font-size: 22px;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-instagram{
+    color: #e1306c;
+}
+.fa-twitter{
+    color: #1da1f2;
+}
+.fa-whatsapp{
+    color: #25d366;
+}
+.fa-envelope{
+    color: #ffc107;
+}
+.fa-code{
+    color: #f44336;
+}
