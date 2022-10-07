@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Share Button</title>
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="menu">
+        <div class="toggle">
+            <i id="button" class="fas fa-share" title="Share"></i>
+        </div>
+        <li style="--i:0">
+            <a href="#"><i class="fas fa-code" title="Embed"></i></a>
+        </li>
+        <li style="--i:1">
+            <a href="#"><i class="fab fa-facebook" title="Facebook"></i></a>
+        </li>
+        <li style="--i:2">
+            <a href="#"><i class="fab fa-instagram" title="Instagram"></i></a>
+        </li>
+        <li style="--i:3">
+            <a href="#"><i class="fab fa-twitter" title="Twitter"></i></a>
+        </li>
+        <li style="--i:4">
+            <a href="#"><i class="fab fa-whatsapp" title="Whatsapp"></i></a>
+        </li>
+        <li style="--i:5">
+            <a href="#"><i class="fas fa-envelope" title="E-mail"></i></a>
+        </li>
+    </div>
+</body>
+<script>
+    let toggle=document.querySelector('.toggle');
+    let menu=document.querySelector('.menu');
+    let button=document.getElementById('button');
+
+    toggle.onclick=function(){
+        menu.classList.toggle('active');
+        button.classList.toggle('fa-times')
+    }
+</script>
+</html>
