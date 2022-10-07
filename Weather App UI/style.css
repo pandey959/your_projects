@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #a7d9e7 0%, #6cdceb 100%);
+}
+.container{
+    height: 600px;
+    width: 320px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+.location{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+.icon i{
+    margin: 0 10px 0 0;
+    font-size: 25px;
+}
+span.new-york{
+    font-size: 25px;
+    font-weight: 550;
+}
+.weather h2{
+    margin-top: 15px;
+}
+.weather img{
+    height: 120px;
+    width: 120px;
+    margin-top: 25px;
+}
+.weather h1{
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.min-max{
+    margin-top: 25px;
+}
+.vertical-line{
+    margin: 0 10px;
+    border-left: 3px solid #000;
+}
+
+.other-time{
+    margin-top: 25px;
+    display: flex;
+}
+span.today{
+    position: absolute;
+    margin-left: 115px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.times{
+    display: flex;
+    margin-left: 45px;
+    margin-top: 65px;
+}
+.time{
+    margin: 0 15px;
+}
+.time img{
+    width: 45px;
+    height: 45px;
+}
