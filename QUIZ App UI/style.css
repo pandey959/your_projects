@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    user-select: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top, #147f9c 0%, #005bea 100%);
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    height: 600px;
+    width: 285px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(0.1px);
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.title h2{
+    text-align: center;
+    font-size: 23px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 750;
+}
+
+.question h3{
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+svg{
+    position: relative;
+    height: 190px;
+    width: 220px;
+    z-index: 1000;
+}
+svg circle{
+    height: 100%;
+    width: 100%;
+    fill: none;
+    stroke: #00f1f1;
+    stroke-width: 12px;
+    transform: translate(65px, 30px);
+    stroke-dasharray: 521;
+    stroke-dashoffset: 200;
+    stroke-linecap: round;
+}
+svg circle:nth-child(1){
+    stroke-dashoffset: -200;
+    stroke: #fff;
+    stroke-width: 2px;
+}
+.number{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.number span{
+    font-size: 35px;
+    font-weight: 750;
+    color: #fff;
+}
+.answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.answer .option{
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.option h1{
+    height: 40px;
+    width: 40px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+h4{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 650;
+}
