@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #clock{
+            height: 20vh;
+            width: 40vw;
+            background-color: rgb(125, 202, 202);
+            position: fixed;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            box-shadow: 8px 8px 16px #cddce1,
+                        -8px -8px 16px #cddce1;
+        }
+        h1{
+            font-size: 90px;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 15px;
+            text-shadow: 4px 3px 0 #fff, 9px 8px 0 rgba(0, 0, 0, 0.15);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Digital Clock</title>
+</head>
+<body>
+    <div id="clock">
+        <h1 id="time">
+
+        </h1>
+    </div>
+    
+</body>
+<script>
+    var myVar=setInterval(myTimer, 1000);
+    function myTimer(){
+        var a=new Date();
+        document.getElementById("time").innerHTML=a.toLocaleTimeString();
+    }
+</script>
+</html>
